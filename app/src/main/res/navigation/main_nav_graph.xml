@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainScreenFragment">
+
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.forbegaapp_29_11_2023.presentation.main_screen.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_foodDetailsScreenFragment"
+            app:destination="@id/foodDetailsScreenFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingScreenFragment"
+        android:name="com.example.forbegaapp_29_11_2023.presentation.on_boarding_screen.OnBoardingScreenFragment"
+        android:label="fragment_on_boarding_screen"
+        tools:layout="@layout/fragment_on_boarding_screen" >
+        <action
+            android:id="@+id/action_onBoardingScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsScreenFragment"
+        android:name="com.example.forbegaapp_29_11_2023.presentation.details_screen.FoodDetailsScreenFragment"
+        android:label="fragment_food_details_screen"
+        tools:layout="@layout/fragment_food_details_screen" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.example.forbegaapp_29_11_2023.presentation.details_screen.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" />
+</navigation>

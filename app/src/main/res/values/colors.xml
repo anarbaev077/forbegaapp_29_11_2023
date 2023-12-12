@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="onboarding_background">#2f2e41</color>
+    <color name="onboarding_image_background">#3f3d56</color>
+    <color name="onboarding_btn_background">#FCB495</color>
+    <color name="main_menu_background">#FCB495</color>
+    <color name="favoured_txt">#888888</color>
+    <color name="dollars_color">#5AA72B</color>
+    <color name="flavoured_color">#FF888888</color>
+</resources>
