@@ -4,6 +4,11 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="android:statusBarColor">@color/onboarding_background</item>
-        <item name="android:navigationBarColor">@color/onboarding_background</item>
+        <item name="android:navigationBarColor">@color/white</item>
     </style>
+
+    <style name="Theme.Forbegaapp_29_11_2023" parent="Base.Theme.Forbegaapp_29_11_2023">
+        <item name="foodAppBackGround">@color/white</item>
+    </style>
+
 </resources>

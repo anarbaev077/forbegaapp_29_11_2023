@@ -1,13 +1,11 @@
-package com.example.forbegaapp_29_11_2023.presentation
+package com.example.forbegaapp_29_11_2023.presentation.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.forbegaapp_29_11_2023.R
 import com.example.forbegaapp_29_11_2023.data.models.FoodModel
-import com.example.forbegaapp_29_11_2023.databinding.FoodItemBinding
 import com.example.forbegaapp_29_11_2023.databinding.FoodItemOnBasketBinding
 
 class CardAdapter(

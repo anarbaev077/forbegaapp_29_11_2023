@@ -6,12 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".presentation.details_screen.BasketFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="@string/basketTv"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteMd"
+        app:layout_constraintStart_toEndOf="@+id/backCvFragment"
+        app:layout_constraintTop_toTopOf="parent" />
     <androidx.cardview.widget.CardView
         android:id="@+id/backCvFragment"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="18dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/onboarding_btn_background"
         app:cardCornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
-            android:src="@drawable/cancel_close_svgrepo_com"
+            android:src="@drawable/back_buttons_multimedia_svgrepo_com"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.cardview.widget.CardView>
@@ -30,7 +41,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="18dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/onboarding_btn_background"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">

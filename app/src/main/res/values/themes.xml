@@ -6,7 +6,7 @@
         <item name="android:statusBarColor">@color/onboarding_background</item>
         <item name="android:navigationBarColor">@color/onboarding_background</item>
     </style>
-    
+
     <style name="MaterialCardStyle" parent="Widget.MaterialComponents.CardView">
         <item name="cornerSizeTopLeft">22dp</item>
         <item name="cornerSizeBottomLeft">22dp</item>
@@ -14,5 +14,7 @@
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
-    <style name="Theme.Forbegaapp_29_11_2023" parent="Base.Theme.Forbegaapp_29_11_2023" />
+    <style name="Theme.Forbegaapp_29_11_2023" parent="Base.Theme.Forbegaapp_29_11_2023">
+        <item name="foodAppBackGround">@color/white</item>
+    </style>
 </resources>

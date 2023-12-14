@@ -24,5 +24,8 @@
     <string name="basketTv">Basket</string>
     <string name="settingsTv">Settings</string>
     <string name="deleteTv_tv">delete</string>
+    <string name="information_foods">Information</string>
+    <string name="about_this_product_tv">About this product</string>
+    <string name="flavoured_tv_fds">Flavoured cupcakes with special icing, Flavoured cupcakes.</string>
 
 </resources>

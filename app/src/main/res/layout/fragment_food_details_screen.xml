@@ -11,7 +11,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="18dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/onboarding_btn_background"
         app:cardCornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
-            android:src="@drawable/keyboard_arrow_left"
+            android:src="@drawable/back_buttons_multimedia_svgrepo_com"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -133,15 +133,27 @@
         app:layout_constraintTop_toBottomOf="@+id/flavoured_cup_cakes_text_view" />
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="@string/information_foods"
+        android:layout_marginTop="10dp"
+        android:textSize="36sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backCv"
+        app:layout_constraintTop_toTopOf="parent" />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/save_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginBottom="12dp"
-        android:backgroundTint="@color/onboarding_background"
+        android:backgroundTint="@color/onboarding_btn_background"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/add_to_cart_btn"
+        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
         app:cornerRadius="8dp"
@@ -160,8 +172,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvFoodPrice"
-        tools:text="About this product" />
-
+        android:text="@string/about_this_product_tv"/>
     <TextView
         android:id="@+id/flavoured_cup_cakes_text_view"
         android:layout_width="match_parent"
@@ -172,25 +183,75 @@
         app:layout_constraintEnd_toEndOf="@+id/txt_about_this_product"
         app:layout_constraintStart_toStartOf="@+id/txt_about_this_product"
         app:layout_constraintTop_toBottomOf="@+id/txt_about_this_product"
-        tools:text="Flavoured cupcakes with special icing, Flavoured cupcakes." />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:src="@drawable/vector__6_"
-        app:layout_constraintBottom_toTopOf="@+id/flavoured_cup_cakes_text_view"
+        android:text="@string/flavoured_tv_fds"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/save_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feed_back_fourth" />
+        app:layout_constraintTop_toBottomOf="@+id/flavoured_cup_cakes_text_view">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/vector__6_"
+            app:layout_constraintBottom_toTopOf="@+id/save_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flavoured_cup_cakes_text_view" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="22dp"
+            android:text="@string/favourites_feedback_txt"/>
+    </LinearLayout>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cvFoodPrice"
-        android:layout_width="72dp"
-        android:layout_height="45dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_margin="12dp"
         app:cardBackgroundColor="@color/onboarding_btn_background"
-        app:cardCornerRadius="22dp"
+        app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -202,7 +263,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/dollars_txt"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
     </com.google.android.material.card.MaterialCardView>

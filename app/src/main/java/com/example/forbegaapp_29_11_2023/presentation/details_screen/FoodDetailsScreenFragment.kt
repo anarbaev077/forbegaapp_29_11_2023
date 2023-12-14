@@ -39,7 +39,6 @@ class FoodDetailsScreenFragment : Fragment() {
             setupView(it)
             setupClickLIsteners(foodModel)
         }
-
         binding.backCv.setOnClickListener {
             findNavController().popBackStack()
         }
